@@ -1,0 +1,7 @@
+on: #Acaparará los triggers de este workflow
+	push: #El tipo de trigger: push
+		branches: #Las ramas en las que se activará el workflow
+			- 'main' #Se activará si se hace push en la rama main
+			- 'releases/**' #O en la rama releases y derivados
+		paths: #Serán las rutas que se tendrán en cuenta para activar el workflow
+			- '**.js' #Todos los archivos .js en el repositorio
